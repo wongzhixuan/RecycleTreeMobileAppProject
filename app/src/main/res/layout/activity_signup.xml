@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/signup_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/signup_logo_des"
+            android:src="@drawable/signup_icon_3" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etUname"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@+id/tv_uname"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="@font/raleway_bold"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:textColorHint="#773E5475" />
+
+            <TextView
+                android:id="@+id/tv_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="@string/username"
+                android:textColor="#3E5475"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="70dp"
+                android:layout_toEndOf="@+id/tv_email"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="@font/raleway_bold"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#773E5475" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="@string/email"
+                android:textColor="#3E5475"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etPwd"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="35dp"
+                android:layout_toEndOf="@+id/tv_pwd"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="@font/raleway_bold"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColorHint="#773E5475" />
+
+            <TextView
+                android:id="@+id/tv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="@string/password"
+                android:textColor="#3E5475"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etRptPwd"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="55dp"
+                android:layout_toEndOf="@+id/tv_rptPwd"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="@font/raleway_bold"
+                android:hint="@string/repeat_password"
+                android:inputType="textPassword"
+                android:textColorHint="#773E5475" />
+
+            <TextView
+                android:id="@+id/tv_rptPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="@string/repeat"
+                android:textColor="#3E5475"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_rptPwd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rptPwd"
+                android:fontFamily="@font/raleway_bold"
+                android:text="@string/password"
+                android:textColor="#3E5475"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="233dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#FE7D56"
+                android:fontFamily="@font/justice_league"
+                android:text="@string/sign_up"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3E5475"
+                app:strokeWidth="5dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_existingAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:text="@string/existingAccount"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="#3E5475"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnLogIn"
+                android:layout_width="233dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_existingAccount"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#7E92FF"
+                android:fontFamily="@font/justice_league"
+                android:text="@string/log_in"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                app:strokeColor="#3E5475"
+                app:strokeWidth="5dp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

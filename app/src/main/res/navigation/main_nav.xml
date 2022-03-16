@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@+id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.recycletree.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/location"
+        android:name="com.example.recycletree.LocationFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_location" />
+
+    <fragment
+        android:id="@+id/recycle"
+        android:name="com.example.recycletree.RecycleFragment"
+        android:label="Recycle"
+        tools:layout="@layout/fragment_recycle" />
+
+    <fragment
+        android:id="@+id/guide"
+        android:name="com.example.recycletree.GuideFragment"
+        android:label="Guide"
+        tools:layout="@layout/fragment_guide" />
+
+    <fragment
+        android:id="@+id/statistic"
+        android:name="com.example.recycletree.StatisticFragment"
+        android:label="Statistic"
+        tools:layout="@layout/fragment_statistic" />
+
+</navigation>

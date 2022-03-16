@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E5475"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/recycletree_logo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/recycletree_logo2" />
+
+    <TextView
+        android:id="@+id/tv_recycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycletree_logo"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/justice_league"
+        android:text="@string/recycle"
+        android:textColor="#DCE4E9"
+        android:textSize="42sp" />
+
+    <TextView
+        android:id="@+id/tv_tree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycletree_logo"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toEndOf="@+id/tv_recycle"
+        android:fontFamily="@font/justice_league"
+        android:text="@string/tree"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp" />
+
+</RelativeLayout>

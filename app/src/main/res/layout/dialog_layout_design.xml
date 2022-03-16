@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rect_white">
+
+            <TextView
+                android:id="@+id/tv_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/justice_league"
+                android:text="Congratulations!"
+                android:textColor="@color/coral"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_dialog2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_dialog"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="We have planted a tree for you!"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/alertPositive"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_green"
+                android:fontFamily="@font/justice_league"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/dialog_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/recycletree_logo2"></ImageView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

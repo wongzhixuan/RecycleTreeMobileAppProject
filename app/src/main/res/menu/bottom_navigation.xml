@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home_selector"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Location"
+        android:id="@+id/location"
+        android:icon="@drawable/location_selector"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Recycle"
+        android:id="@+id/recycle"
+        android:icon="@drawable/recycle_selector"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Guide"
+        android:id="@+id/guide"
+        android:icon="@drawable/guide_selector"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Statistic"
+        android:id="@+id/statistic"
+        android:icon="@drawable/statistic_selector"
+        android:menuCategory="secondary"/>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FE7056">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/UserPicBorder"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circleborder">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/drawer_ProfileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="9dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/circle_profile"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample_profile"
+                app:shapeAppearanceOverlay="@style/circular"></com.google.android.material.imageview.ShapeableImageView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/drawer_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="User Name"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/drawer_UserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="user@gmail.com"
+            android:textColor="#fff"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

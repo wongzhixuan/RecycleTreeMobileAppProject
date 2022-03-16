@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RecycleFragment"
+    android:id="@+id/recycle_frame">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/recycle_icon"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/justice_league"
+        android:textColor="@color/gradStart"
+        android:textSize="28sp"
+        android:text="You Have recycled" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="20dp">
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/recycle_orange">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/recycle_1"
+                    android:id="@+id/recycle_orange_icon"
+                    android:layout_centerHorizontal="true"
+                    />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_recycle_orange"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/recycle_orange"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/reward_circle"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center|center_vertical"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/recycle_blue">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/recycle_2"
+                        android:id="@+id/recycle_blue_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_recycle_blue"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/recycle_blue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/blue_circle_with_stroke"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center|center_vertical"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="35dp"
+                >
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/recycle_brown" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/recycle_3"
+                        android:id="@+id/recycle_brown_icon"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_recycle_brown"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/recycle_brown"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/brown_circle_with_stroke"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center|center_vertical"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/qr_scan"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/light_grey_circle"
+                android:elevation="@dimen/elevation_fab"
+                android:padding="18dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/qrscanner">
+
+            </ImageButton>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
